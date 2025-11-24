@@ -1,0 +1,44 @@
+@import "tailwindcss";
+
+/* --- Custom Table Styling for AI Output --- */
+
+/* 1. Make the table scrollable horizontally */
+.summary-output table {
+  display: block; /* Essential for overflow-x to work on a table */
+  width: 100%;
+  overflow-x: auto; /* Adds scrollbar if table is too wide */
+  -webkit-overflow-scrolling: touch; /* Smooth scrolling on mobile */
+  
+  /* Existing styling */
+  border-collapse: separate; 
+  border-spacing: 0;
+  margin: 1.5rem 0; 
+  border: 1px solid #e2e8f0; 
+  border-radius: 0.5rem; 
+}
+
+.summary-output th {
+  background-color: #f8fafc; 
+  font-weight: 700;
+  color: #1e293b; 
+  padding: 0.75rem 1.5rem; 
+  text-align: center; 
+  border-bottom: 2px solid #e2e8f0;
+  white-space: nowrap; /* Prevents headers from breaking into two lines */
+}
+
+.summary-output td {
+  padding: 0.75rem 1.5rem; 
+  text-align: center; 
+  border-bottom: 1px solid #f1f5f9;
+  color: #334155;
+  white-space: nowrap; /* Ensures data stays on one line for readability */
+}
+
+.summary-output tr:last-child td {
+  border-bottom: none; 
+}
+
+.summary-output tr:hover td {
+  background-color: #f8fafc; 
+}
