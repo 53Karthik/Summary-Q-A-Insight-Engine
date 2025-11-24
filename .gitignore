@@ -1,0 +1,36 @@
+# Dependencies
+node_modules/
+package-lock.json 
+# ^ Optional: Keep package-lock.json if you want consistent versions, remove it if you want to save space/don't care. 
+# Standard practice is to KEEP package-lock.json but ignore node_modules.
+
+# Environment Variables (CRITICAL SECURITY)
+.env
+.env.local
+.env.*.local
+
+# Build Outputs
+dist/
+build/
+out/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+logs/
+*.log
+
+# OS Generated Files
+.DS_Store
+Thumbs.db
+
+# IDE / Editor Files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Firebase
+.firebase/
+firebase-debug.log
